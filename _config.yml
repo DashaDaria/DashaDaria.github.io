@@ -1,0 +1,21 @@
+# Site settings
+title: Leap of Code
+header-img: img/home-bg.png
+email: dashadariallc@gmail.com
+copyright_name: DashaDaria
+description: > # this means to ignore newlines until "baseurl:"
+  'Life is always a matter of waiting for the right moment to act.'
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: danikitina
+github_username:  DashaDaria
+learn_profile: DashaDaria
+email_username: dashadariallc@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
