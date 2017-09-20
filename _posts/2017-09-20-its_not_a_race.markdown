@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "**It's Not A Race**"
-date:   2017-09-20 09:03:26 +0000
+title:  "It's Not A Race"
+date:   2017-09-20 05:03:26 -0400
 ---
 
 
