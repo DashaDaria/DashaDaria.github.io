@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Regex are Rejects"
-date:       2017-10-09 07:10:49 +0000
+date:       2017-10-09 03:10:50 -0400
 permalink:  regex_are_rejects
 ---
 
@@ -22,7 +22,7 @@ As a beginner, the best way to go about using regex, is to keep it simple. Do no
 
 1. Simple text matching: `/any_text_you_want_to_match/`
 2. Metacharacters: 
-![](https://imgur.com/RptlgIK)
+![](https://i.imgur.com/RptlgIK.png)
 3. Only specific characters: `/[aeiou]/`
 4. Ranges: `[0-9]` or `/[a-j]/`
 5. Best tool for practice: http://rubular.com/
