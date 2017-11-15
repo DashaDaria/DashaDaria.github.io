@@ -1,0 +1,46 @@
+---
+layout: post
+title:      "I Rake You"
+date:       2017-11-15 02:19:40 +0000
+permalink:  i_rake_you
+---
+
+
+My most favorite discovery so far has been the Rake tool, specifically the Rake Console task that allows you to drop into your code via an irb or Pry session AND preloads your library/environment. This means you can test your code and see all the outputs in real time. This becomes extremely helpful when building more complex programs and debugging. 
+
+**So What Is Rake?**
+* it's a software task management and build automation tool available in Ruby
+* it allows you to create tasks ("Rake tasks") that depend on one another or have prerequisites
+* these tasks, once defined, can be executed via the command line
+* tasks can be custom built or any from the avalaible list `rake -T` 
+
+**'Rake Console' Task Setup**
+1. Rake is already available to us as part of Ruby but can also be installed: `gem install rake` 
+2. Create a file in the top level of your directory called `Rakefile`, this is where the tasks will be defined
+3. In order for the `console` task to preload our environment, we'll need to specify a dependency:
+
+  ```
+  desc 'drop into the Pry console'
+  task :console => :environment do
+   Pry.start 
+  end
+  ```
+*OR make sure your Rakefile has `require "./config/environment"` at the top and define the following task:
+```
+  desc 'drop into the Pry console'
+  task :console do
+   Pry.start 
+  end
+```
+
+**Errors**
+One of the most common error's we can get in the terminal:
+> rake aborted!
+Don't know how to build task 'console'
+
+Here are some of the things to check:
+* Is pry available in the gem file? is rake?
+* Are we requiring the correct path to the environment?
+* Do we have a Rakefile and is it at the top level?
+
+
