@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sinatra Portfolio Project - Circuit Trainer"
-date:       2017-11-22 09:11:02 +0000
+date:       2017-11-22 04:11:03 -0500
 permalink:  sinatra_portfolio_project_-_circuit_trainer
 ---
 
@@ -23,7 +23,7 @@ There were several decisions I had to make in my code that greatly impacted the 
 
 * Do not use **has_and_belongs_to_many** relationship. Long story short, this relationship utilizes a join table that DOES NOT have an id attribute, which might limit your code in the future. A good walkthrough on the reasoning behind this can be found [here](http://blog.flatironschool.com/why-you-dont-need-has-and-belongs-to-many/).
 
-* I can use ** inline CSS** for flash messaging. Of course the proper way to go about stylizing your app is to use stylesheets. However, if you want to stylize one element (like a flash message), and your focus is not on the front end of your app at the moment, try this:
+* I can use **inline CSS** for flash messaging. Of course the proper way to go about stylizing your app is to use stylesheets. However, if you want to stylize one element (like a flash message), and your focus is not on the front end of your app at the moment, try this:
 ```
   <% if flash.has?(:message) %>
     <p style="color:red;"><%= flash[:message] %></p>
@@ -31,5 +31,11 @@ There were several decisions I had to make in my code that greatly impacted the 
 ```  
 
 * There's a **titleize** method in Ruby to simply capitalize every word of your string.  
+
+**Further Development**
+
+Currently, the app only has the barebone structure. I am excited to develop this more and include styles as well as other features like:
+* Coach Reviews - a tool that reviews user's circuits and provides feedback based on desired goals
+* Ultimate Workouts - another layer that allows users to create a full workout by adding multiple circuits together.
 
 
